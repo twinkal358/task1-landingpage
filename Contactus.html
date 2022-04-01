@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        font-family: serif;
+        background: linear-gradient(0deg, #6b3aff 50%, #fff 50%, #fff);
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        padding: 40px;
+        box-sizing: border-box;
+        background: #fff;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, .5);
+        border-radius: 5px;
+    }
+    
+    .wrapper h2 {
+        color: #666;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .inp-field {
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .inp-field input,
+    .inp-field textarea {
+        width: 100%;
+        padding: 5px 0;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #666;
+        font-weight: 700;
+        resize: none;
+    }
+    
+    .inp-field label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 0;
+        pointer-events: none;
+        color: #666;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: .5s;
+    }
+    
+    .inp-field input:focus+label,
+    .inp-field textarea:focus+label,
+    .inp-field input:valid+label,
+    .inp-field textarea:valid+label {
+        top: -23px;
+        padding: 2px 5px;
+        background: #ff006a;
+        color: #fff;
+        border-radius: 4px;
+    }
+    
+    .btn {
+        margin-top: 20px;
+        background: #ff006a;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+        float: right;
+    }
+    
+    .btn:hover {
+        background: #6b3aff;
+    }
+    
+    small {
+        font-size: 10px;
+    }
+    
+    a {
+        color: #ff006a;
+        text-decoration: none;
+        font-weight: 800;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+
+        <a href="https://code.sololearn.com/WZF603Bsn5qF/?ref=app">
+            <h2>Contact Us</h2>
+        </a>
+
+        <form>
+            <div class="inp-field">
+                <input type="text" required />
+                <label>Name</label>
+            </div>
+            <div class="inp-field">
+                <input type="email" required />
+                <label>Email</label>
+            </div>
+            <div class="inp-field">
+                <input type="tel" required />
+                <label>Phone</label>
+            </div>
+            <div class="inp-field">
+                <textarea rows="5" required></textarea>
+                <label>Message</label>
+            </div>
+            <a id="redirect" href="#"><input type="submit" value="send message" class="btn" /></a>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
